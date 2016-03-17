@@ -1,0 +1,504 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	background: #00184d;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	display: inline;
+}
+
+.banner {
+	background: url(sprites/logo.png) no-repeat;
+	background-position: center center;
+	width: 30%;
+	height: 80px;
+	float: left;
+}
+
+.bmenu {
+	height: 80px;
+	float: left;
+	display: inline;
+	position: relative;
+	max-width: 70%;
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	margin-top: 30px;
+}
+
+.menu ul {
+	border: 1px solid #122354;
+}
+
+.menu li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.menu .menup li a p {
+	text-transform: uppercase;
+}
+
+.menu li .prime {
+	margin: 5px 20px;
+}
+
+.menu .menup .menuitem .submenu-header {
+	height: 137px;
+	position: relative;
+	text-align: left;
+	padding-top: 50px;
+}
+
+.menu .menup .menuitem .submenu-header p {
+	padding-top: 20px;
+	font-family: 'Roboto Slab', serif;
+	color: #2c3b67;
+
+}
+
+a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.menu li a {
+	color: #fff;
+}
+
+.menu .menup li a {
+	color: #001247;
+}
+
+.menu .menup a span {
+	width: 55px;
+	height: 55px;
+	float: left;
+	display: block;
+	border-right: 1px solid #ebeef0;
+	position: relative;
+}
+
+.menu .menup .menuitem li a span {
+	width: 55px;
+	height: 100%;
+	font-size: 12px;
+	display: inline;
+	border-right: none;
+}
+
+.menu .menup .menuitem li a .item {
+	display: inline;
+	width: 390px;
+	border-left: none;
+	text-align: left;
+	float: none;
+}
+
+.menu .menup li {
+	background-color: #f7f9f9;
+	width: 305px;
+	height: 55px;
+	position: static;
+	border: 1px solid #f2f3f5;
+}
+
+.menu .menup .menuitem li {
+	background-color: #fff;
+	width: 450px;
+	height: 55px;
+	display: block;
+	padding-left: 40px;
+	border: none;
+}
+
+.menu .menup .menuitem li a{
+	color: #fb620d;
+	text-decoration: underline;
+	width: 100%;
+	height: 100%;
+}
+
+.menu .menup {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+.menu .menup li a p {
+	vertical-align: middle;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.menu .menup .firma {
+	text-align: left;
+}
+
+.menu li:hover .menup {
+	display: block;
+}
+
+.menu .menup .menuitem {
+	display: none;
+	position: absolute;
+	font-family: "Open Sans", sans-serif bold 600;
+}
+
+.menu .menup li:hover .menuitem {
+	display: block;
+	top: -1px;
+	left: 100%;
+}
+
+.menu li:hover .prime{
+	color: #fb620d;
+}
+
+.menu .menup li:hover{
+	background-color: #fff;
+}
+
+.menu .menup .menuitem li:hover a{
+	color: #1ec00e;
+}
+
+.sprite {
+	display: block;
+}
+
+/* Menu 2 sprites */
+
+.menu .menup a .jlc {
+	border-left: 3px solid #f19028;
+}
+
+.menu .menup a .niltilift {
+	border-left: 3px solid #8bc53f;
+}
+
+.menu .menup a .ommelift {
+	border-left: 3px solid #8989b0;
+}
+
+.menu .menup a .geda {
+	border-left: 3px solid #5a769a;
+}
+
+.menu .menup a .unic {
+	border-left: 3px solid #e31b1d;
+}
+
+.menu .menup a .pumps {
+	border-left: 3px solid #ffb10a;
+}
+
+.menu .menup a .genset {
+	border-left: 3px solid #004a8d;
+}
+
+.menu .menup a .instant {
+	border-left: 3px solid #c02a26;
+}
+
+.menu .menup a .generac {
+	border-left: 3px solid #d25d13;
+}
+
+.menu .menup a .brendon {
+	border-left: 3px solid #f6ec00;
+}
+
+.menu .menup a .western {
+	border-left: 3px solid #ec2a24;
+}
+
+.menu .menup .firma :before {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.menu .menup a .jlc:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 0;
+	width: 25px;
+	height: 10px;
+	position: absolute;
+}
+
+.menu .menup a .niltilift:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -17px;
+	width: 53px;
+	height: 7px;
+	position: absolute;
+}
+
+.menu .menup a .ommelift:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -31px;
+	width: 32px;
+	height: 17px;
+	position: absolute;
+}
+
+.menu .menup a .geda:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -55px;
+	width: 32px;
+	height: 7px;
+	position: absolute;
+}
+
+.menu .menup a .unic:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -69px;
+	width: 32px;
+	height: 8px;
+	position: absolute;
+}
+
+.menu .menup a .pumps:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0.375% 29.682%;
+	width: 33px;
+	height: 17px;
+	position: absolute;
+}
+
+.menu .menup a .genset:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat -1px -108px;
+	width: 42px;
+	height: 17px;
+	position: absolute;
+}
+
+.menu .menup a .instant:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -132px;
+	width: 43px;
+	height: 9px;
+	position: absolute;
+}
+
+.menu .menup a .generac:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -148px;
+	width: 42px;
+	height: 11px;
+	position: absolute;
+}
+
+.menu .menup a .brendon:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -167px;
+	width: 46px;
+	height: 31px;
+	position: absolute;
+}
+
+.menu .menup a .western:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -209px;
+	width: 43px;
+	height: 10px;
+	position: absolute;
+}
+
+/* Menu 3 sprites */
+
+.menu .menup .menuitem a .p1:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -2px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p2:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -50px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p3:before {
+	background: url(sprites/second_menu.png) no-repeat -43px -1px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p4:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -50px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p5:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -2px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p6:before {
+	background: url(sprites/second_menu.png) no-repeat -43px -1px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p7:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -50px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.menu .menup .menuitem a .p8:before {
+	background: url(sprites/second_menu.png) no-repeat 0 -2px;
+	content: "";
+	width: 32px;
+	height: 41px;
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.submenu-header:after {
+	content: "";
+	display: block;
+	width: 25%;
+	border: 2px solid #001247;
+	margin-top: 10px;
+}
+
+.submenu-header .jlc:before {
+	content: "";
+	display: block;
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 0;
+	width: 25px;
+	height: 10px;
+}
+
+.submenu-header .niltilift:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -17px;
+	width: 53px;
+	height: 7px;
+	display: block;
+}
+
+.submenu-header .ommelift:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -31px;
+	width: 32px;
+	height: 17px;
+	display: block;
+}
+
+.submenu-header .geda:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -55px;
+	width: 32px;
+	height: 7px;
+	display: block;
+}
+
+.submenu-header .unic:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -69px;
+	width: 32px;
+	height: 8px;
+	display: block;
+}
+
+.submenu-header .pumps:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat -1px -84px;
+	width: 33px;
+	height: 17px;
+	display: block;
+}
+
+.submenu-header .genset:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat -1px -108px;
+	width: 42px;
+	height: 17px;
+	display: block;
+}
+
+.submenu-header .instant:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -132px;
+	width: 43px;
+	height: 9px;
+	display: block;
+}
+
+.submenu-header .generac:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -148px;
+	width: 42px;
+	height: 11px;
+	display: block;
+}
+
+.submenu-header .brendon:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -167px;
+	width: 46px;
+	height: 31px;
+	display: block;
+}
+
+.submenu-header .western:before {
+	content: "";
+	background: url(sprites/sprites_pop_up_menu.png) no-repeat 0 -209px;
+	width: 43px;
+	height: 10px;
+	display: block;
+}
